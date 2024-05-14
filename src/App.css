@@ -1,0 +1,54 @@
+.all {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid rgb(129, 129, 129);
+  padding: 10px;
+}
+
+.inputText {
+  display: flex;
+  font-size: 22px;
+  background-color: rgb(216, 216, 216);
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.addbtn {
+  margin-left: auto;
+}
+
+input {
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(129, 129, 129);
+}
+
+.workDone {
+  border: 2px solid rgb(129, 129, 129);
+}
+
+h1 {
+  margin: 2px;
+}
+h2 {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
