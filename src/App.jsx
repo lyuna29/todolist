@@ -3,19 +3,21 @@ import "./App.css";
 
 function App() {
   const style = {
-    display: "flex",
-    gap: "12px",
-    padding: "20px",
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    gridGap: "8px",
+    placeItems: "center",
   };
 
   const squareStyle = {
-    width: "300px",
+    width: "250px",
     height: "150px",
     border: "2px solid rgb(0, 0, 0)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: "10px",
+    margin: "10px",
   };
 
   const [contents, setContents] = useState([
@@ -136,20 +138,19 @@ function App() {
             <div className="doneBox"></div>
             <h2>Done..!🎉</h2>
             <div style={style}>
-              <div style={squareStyle}>
-                {contents
-                  .filter((content) => content.isDone)
-                  .map(function (content) {
-                    return (
+              {contents
+                .filter((content) => content.isDone)
+                .map(function (content) {
+                  return (
+                    <div style={squareStyle} key={content.id}>
                       <Content
-                        key={content.id}
                         content={content}
                         deleteTextHandler={deleteTextHandler}
                         toggleIsDone={toggleIsDone}
                       />
-                    );
-                  })}
-              </div>
+                    </div>
+                  );
+                })}
             </div>
           </div>
         </div>
