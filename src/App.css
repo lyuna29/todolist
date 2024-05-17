@@ -1,4 +1,13 @@
+@font-face {
+  font-family: "Ownglyph_meetme-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .all {
+  font-family: "Ownglyph_meetme-Rg";
   height: 100%;
   margin: 0;
   display: flex;
@@ -17,9 +26,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  font-size: 20px;
-  border: 1px solid rgb(129, 129, 129);
+  font-size: 30px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 10px;
   padding: 10px;
+  background-color: #c8edff;
 }
 
 .inputText {
@@ -29,6 +40,7 @@
   height: 30px;
   padding: 10px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .addbtn {
@@ -41,8 +53,14 @@ input {
   border: 2px solid rgb(129, 129, 129);
 }
 
-.workDone {
-  border: 2px solid rgb(129, 129, 129);
+.workBox {
+  border: 2px solid rgb(255, 112, 112);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.done {
+  border: 2px solid rgb(89, 181, 90);
+  border-radius: 10px;
 }
 
 h1 {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Content from "./Content";
 
 function App() {
   const style = {
@@ -12,7 +13,7 @@ function App() {
   const squareStyle = {
     width: "250px",
     height: "150px",
-    border: "2px solid rgb(0, 0, 0)",
+    border: "2px solid rgb(110, 157, 220)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -71,21 +72,6 @@ function App() {
     setContents(newContents);
   };
 
-  const Content = ({ content, deleteTextHandler, toggleIsDone }) => {
-    const { title, text, id, isDone } = content;
-
-    return (
-      <div>
-        <h1>{title}</h1>
-        <p>{text}</p>
-        <button onClick={() => deleteTextHandler(id)}>삭제</button>
-        <button onClick={() => toggleIsDone(id)}>
-          {isDone ? "취소" : "완료"}
-        </button>
-      </div>
-    );
-  };
-
   return (
     <div className="all">
       <div className="wrap">
@@ -134,7 +120,7 @@ function App() {
                 })}
             </div>
           </div>
-          <div>
+          <div className="done">
             <div className="doneBox"></div>
             <h2>Done..!🎉</h2>
             <div style={style}>
